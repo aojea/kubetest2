@@ -88,6 +88,8 @@ type deployer struct {
 
 	MasterSize string `desc:"Sets the MASTER_SIZE environment variable during deployment."`
 	NodeSize   string `desc:"Sets the NODE_SIZE environment variable during deployment."`
+	
+	IngressGceImage    string `desc:"Sets the image used for the GLBC controller."`
 }
 
 // pseudoUniqueSubstring returns a substring of a UUID
